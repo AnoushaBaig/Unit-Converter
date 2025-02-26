@@ -178,6 +178,6 @@ if st.button("Ask AI"):
     else:
         st.warning("⚠️ Please enter a question.")
 
-# Footer
+# footer
 st.markdown("---")
-st.markdown("👩‍💻 Developed by **Anousha Baig** | 🚀 Powered by **Google Gemini AI & Streamlit**")
+st.markdown("👩‍💻 Developed by **Anoushaa Baig** | 🚀 Powered by **Google Gemini AI & Streamlit**")
