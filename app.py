@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables
-load_dotenv()
+load_dotenv(".env.local")
 api_key = os.getenv("GEMINI_API_KEY")
 
 # Initialize Gemini AI
