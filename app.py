@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 import os
 
 # Load environment variables
-load_dotenv(".env.local")
-api_key = os.getenv("GEMINI_API_KEY")
+# load_dotenv(".env.local")
+# api_key = os.getenv("GEMINI_API_KEY")
+api_key = st.secrets["GEMINI_API_KEY"]
 
 # Initialize Gemini AI
 genai.configure(api_key=api_key)
@@ -86,12 +87,12 @@ st.markdown("""
     }
     
     .stMarkdown h1 {
-        color: #4CAF50 !important;
+        color: white !important;
         text-align: center !important;
         animation: fadeIn 2s !important;
     }
     .stMarkdown h2, .stMarkdown h3 {
-        color: #4CAF50 !important;
+        color: white !important;
     }
     .stSuccess {
         background-color: #d4edda !important;
